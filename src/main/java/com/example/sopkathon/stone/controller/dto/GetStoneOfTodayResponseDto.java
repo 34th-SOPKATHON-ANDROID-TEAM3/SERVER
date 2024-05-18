@@ -5,9 +5,11 @@ import com.example.sopkathon.domain.Stone;
 public record GetStoneOfTodayResponseDto(
         String uglyImage,
         String prettyImage,
-        String question
+        String question,
+        String answer
 ) {
     public static GetStoneOfTodayResponseDto of(Stone stone) {
-        return new GetStoneOfTodayResponseDto(stone.getUglyImage(), stone.getPrettyImage(), stone.getQuestion());
+        return new GetStoneOfTodayResponseDto(stone.getUglyImage(), stone.getPrettyImage(), stone.getQuestion(),
+                stone.getAnswer());
     }
 }
