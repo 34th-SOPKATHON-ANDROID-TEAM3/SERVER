@@ -1,8 +1,10 @@
 package com.example.sopkathon.stone.controller;
 
 import com.example.sopkathon.stone.JunseoStoneService;
+import com.example.sopkathon.stone.controller.dto.GetSimpleStoneResponseDto;
 import com.example.sopkathon.stone.controller.dto.GetStoneOfTodayResponseDto;
 import com.example.sopkathon.stone.controller.dto.UpdateAnswerOfStoneRequestDto;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,5 +31,10 @@ public class JunseoStoneController {
     ) {
         junseoStoneService.updateAnswerOfStone(request);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<GetSimpleStoneResponseDto>> getAllSimpleStone() {
+        return ResponseEntity.ok(junseoStoneService.getAllSimpleStone());
     }
 }
