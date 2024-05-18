@@ -10,7 +10,8 @@
 |----------|------------|
 | sunseo18 | eunseo5343 |
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F82bc89ea-0929-4ab7-b82a-52f74dabcc20%2F0692cf58-2e3c-4bc8-8b27-b46da3f469c9%2FUntitled.png?table=block&id=af0d1434-fce5-4f86-afad-ef892f697305&spaceId=82bc89ea-0929-4ab7-b82a-52f74dabcc20&width=2000&userId=0cab8c43-cb75-4761-bcb7-aa3ab61ac5f5&cache=v2)
+![image](https://github.com/34th-SOPKATHON-ANDROID-TEAM3/SERVER/assets/78674565/badd1300-748f-4a0e-956b-cb6bc10f7fb2)
+
 
 ## API 명세서와 역할 분배 (각자 개발 담당 부분)
 
@@ -97,4 +98,5 @@
 
 ## ERD
 
-![Untitled](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F82bc89ea-0929-4ab7-b82a-52f74dabcc20%2F20a4a4be-13ff-41d9-a4cb-aebad2b39ff4%2FUntitled.png?table=block&id=e5cf13e6-087a-4729-802a-1dcb1899b432&spaceId=82bc89ea-0929-4ab7-b82a-52f74dabcc20&width=2000&userId=0cab8c43-cb75-4761-bcb7-aa3ab61ac5f5&cache=v2)
+![image](https://github.com/34th-SOPKATHON-ANDROID-TEAM3/SERVER/assets/78674565/b8f4f3f0-064e-493d-a515-5a4d6a34cf98)
+
