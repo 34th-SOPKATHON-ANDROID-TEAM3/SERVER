@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class StoneService {
 
+    static final String UGLY_IMAGE_URL = "https://i.postimg.cc/52NpRXY1/image.webp";
     private final StoneJpaRepository stoneJpaRepository;
 
     public GetStoneOfTodayResponseDto getStoneOfToday() {
@@ -40,7 +41,7 @@ public class StoneService {
                         stoneImage = stone.getPrettyImage();
                     } else {
                         isPretty = false;
-                        stoneImage = "tmp";
+                        stoneImage = UGLY_IMAGE_URL;
                     }
                     return new GetSimpleStoneResponseDto(stone.getId(), isPretty, stoneImage);
                 }
