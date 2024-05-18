@@ -1,12 +1,14 @@
 package com.example.sopkathon.stone;
 
+import com.example.sopkathon.common.exception.CustomException;
+import com.example.sopkathon.common.exception.ErrorMessage;
 import com.example.sopkathon.domain.Stone;
 import com.example.sopkathon.domain.StoneJpaRepository;
 import com.example.sopkathon.stone.controller.dto.GetSimpleStoneResponseDto;
 import com.example.sopkathon.stone.controller.dto.GetStoneOfTodayResponseDto;
+import com.example.sopkathon.stone.controller.dto.GetStoneResponseDto;
 import com.example.sopkathon.stone.controller.dto.UpdateAnswerOfStoneRequestDto;
 import java.util.List;
-import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,7 +44,17 @@ public class JunseoStoneService {
                     }
                     return new GetSimpleStoneResponseDto(stone.getId(), isPretty, stoneImage);
                 }
-        ).collect(Collectors.toList());
+        ).toList();
+    }
+
+    public GetStoneResponseDto getStone(Long stoneId) {
+        Stone stone = stoneJpaRepository.findById(stoneId)
+                .orElseThrow(() -> new CustomException(ErrorMessage.STONE_NOT_FOUND_EXCEPTION));
+
+        if (stone.getAnswer() == null) {
+            throw new CustomException(ErrorMessage.STONE_NOT_PRETTY);
+        }
+        return GetStoneResponseDto.of(stone);
     }
 
 }
