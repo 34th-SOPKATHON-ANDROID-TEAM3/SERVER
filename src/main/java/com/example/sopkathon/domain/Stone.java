@@ -20,12 +20,6 @@ public class Stone {
 
     private String uglyImage;
 
-    private String shakingImage;
-
-    private String shavingImage1;
-
-    private String shavingImage2;
-
     private String prettyImage;
 
     private String question;
