@@ -17,10 +17,10 @@
 
 | 기능         | HttpMethod | 이름    | url                         |
 |------------|------------|-------|-----------------------------|
-| 오늘의 돌 조회하기 | GET        | @정준서  | {{baseUrl}}/stones/today    |
-| 답변 입력하기    | PATCH      | @정준서  | {{baseUrl}}/stones/today    |
-| 모은 돌 전체보기  | GET        | @백은서 | {{baseUrl}}/stones          |
-| 모은 돌 상세보기  | GET        | @백은서 | {{baseUrl}}/stones/:stoneId |
+| 오늘의 돌 조회하기 | GET        | @정준서  | {{baseUrl}}/api/stones/today    |
+| 답변 입력하기    | PATCH      | @정준서  | {{baseUrl}}/api/stones/today    |
+| 모은 돌 전체보기  | GET        | @백은서 | {{baseUrl}}/api/stones          |
+| 모은 돌 상세보기  | GET        | @백은서 | {{baseUrl}}/api/stones/:stoneId |
 
 ## 브랜치 네이밍
 ```feature/${이슈번호}```
