@@ -22,6 +22,38 @@
 | 모은 돌 전체보기  | GET        | @백은서 | {{baseUrl}}/stones          |
 | 모은 돌 상세보기  | GET        | @백은서 | {{baseUrl}}/stones/:stoneId |
 
+## 브랜치 네이밍
+```feature/${이슈번호}```
+
+## 커밋 컨벤션
+<aside>
+👼🏻 **git commit message convention**
+
+`ex) [FEAT] 식재료 관련 API 구현 #1` 
+
+`ex) [FIX] 버그 수정 #2` 
+
+```ruby
+- [CHORE]: 코드 수정, 내부 파일 수정
+- [FEAT] : 새로운 기능 구현
+- [ADD] : FEAT 이외의 부수적인 코드 추가, 라이브러리 추가, 새로운 파일 생성 시
+- [FIX] : 버그, 오류 해결
+- [DEL] : 쓸모없는 코드 삭제
+- [DOCS] : README나 WIKI 등의 문서 개정
+- [MOVE] : 프로젝트 내 파일이나 코드의 이동
+- [RENAME] : 파일 이름의 변경
+- [MERGE]: 다른브렌치를 merge하는 경우
+- [STYLE] : 코드가 아닌 스타일 변경을 하는 경우
+- [REFACTOR] : 로직은 변경 없는 클린 코드를 위한 코드 수정
+```
+
+<aside>
+💡 **커밋 메세지 마지막에 이슈 번호 꼭 붙이기** ❗❗
+
+</aside>
+
+</aside>
+
 ## 코드 컨벤션
 
 1. **컨트롤러 메서드명**
@@ -86,13 +118,12 @@
 |_  🗂️ domain
 |
 |_  🗂️ stone
-|
-|_  🗂️ controller
-|    |
-|    |_  🗂️ dto
-|
-|
-|_  🗂️ service
+    |
+    |_  🗂️ controller
+    |   |
+    |   |_  🗂️ dto
+    |
+    |_  🗂️ service
 
 ```
 
