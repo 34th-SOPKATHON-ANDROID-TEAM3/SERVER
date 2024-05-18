@@ -19,8 +19,8 @@
 |------------|------------|-------|-----------------------------|
 | 오늘의 돌 조회하기 | GET        | @정준서  | {{baseUrl}}/stones/today    |
 | 답변 입력하기    | PATCH      | @정준서  | {{baseUrl}}/stones/today    |
-| 모은 돌 전체보기  | GET        | @은서 백 | {{baseUrl}}/stones          |
-| 모은 돌 상세보기  | GET        | @은서 백 | {{baseUrl}}/stones/:stoneId |
+| 모은 돌 전체보기  | GET        | @백은서 | {{baseUrl}}/stones          |
+| 모은 돌 상세보기  | GET        | @백은서 | {{baseUrl}}/stones/:stoneId |
 
 ## 코드 컨벤션
 
