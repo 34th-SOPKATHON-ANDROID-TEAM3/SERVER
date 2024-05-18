@@ -75,17 +75,17 @@
 
 ## 프로젝트 폴더링
 
-```json
-🗂️ **project**
+```
+🗂️ project
 |
-|_  🗂️ **common**
+|_  🗂️ common
 |    |_ 🗂️ exception
 |
-|_  🗂️ **config**
+|_  🗂️ config
 |
-|_  🗂️ **domain**
+|_  🗂️ domain
 |
-|_  🗂️ **stone**
+|_  🗂️ stone
 |
 |_  🗂️ controller
 |    |
